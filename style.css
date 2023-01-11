@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: .1fr 1fr .1fr;
+    max-width: 1100px;
+    min-height: 100vh;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* All bloks */
+header, main, footer {
+    margin: 5px 0;
+}
+
+/* Header */
+.title, .subtitle {
+    text-align: center;
+    padding: 10px;
+}
+
+.title {
+    color: blue;
+}
+
+.subtitle {
+    border-bottom: 1px solid gray;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: 150px 1fr .1fr;
+    width: 162px;
+    height: 250px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.img {
+    width: 150px;
+}
+
+/* Footer */
