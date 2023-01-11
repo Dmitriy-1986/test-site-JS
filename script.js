@@ -43,7 +43,7 @@ const fullYear = date.getFullYear();
 
 //Header
 let html =  `<header><h1 class='title'>${data.title}</h1>`;
-    html += `<p class='subtitle' style=${'color:' + styles.subtitleColor}>${data.subTitle}</p>`;
+    html += `<p class='subtitle' style=${'color: ' + styles.subtitleColor}>${data.subTitle}</p>`;
     html += `<p class='description'>${data.description}</p></header>`;
 //Main
     html += `<main><div class='card'><img class='img' src=${data.pear.imgPear} alt=${data.pear.pearTitle}><div><strong>${data.pear.pearTitle}</strong><br><span>${data.pear.pearDescription.slice(0, 25) + '<a target=\'_blank\' href=\'https://dovgaldima.pp.ua\'>...</a>'}</span></div><span>${data.author}</span></div>`;
