@@ -32,23 +32,26 @@ const data = {
 
 data.description += 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo atque voluptas odio iure, delectus quaerat ipsa dolore, ut dolorem consequatur accusamus eaque libero pariatur mollitia quasi culpa quisquam temporibus sit!';
 
+//Styles
+const styles ={
+    subtitleColor: 'tomato'
+}
+
 //Date
 const date = new Date();
 const fullYear = date.getFullYear();
 
 //Header
 let html =  `<header><h1 class='title'>${data.title}</h1>`;
-    html += `<p class='subtitle'>${data.subTitle}</p>`;
+    html += `<p class='subtitle' style=${'color:' + styles.subtitleColor}>${data.subTitle}</p>`;
     html += `<p class='description'>${data.description}</p></header>`;
 //Main
     html += `<main><div class='card'><img class='img' src=${data.pear.imgPear} alt=${data.pear.pearTitle}><div><strong>${data.pear.pearTitle}</strong><br><span>${data.pear.pearDescription.slice(0, 25) + '<a target=\'_blank\' href=\'https://dovgaldima.pp.ua\'>...</a>'}</span></div><span>${data.author}</span></div>`;
     html += `<div class='card'><img class='img' src=${data.apple.imgApple} alt=${data.apple.appleTitle}><div><strong>${data.apple.appleTitle}</strong><br><span>${data.apple.appleDescription.slice(0, 25) + '<a target=\'_blank\' href=\'https://dovgaldima.pp.ua\'>...</a>'}</span></div><span>${data.author}</span></div>`;
     html += `<div class='card'><img class='img' src=${data.apricot.imgApricot} alt=${data.apricot.apricotTitle}><div><strong>${data.apricot.apricotTitle}</strong><br><span>${data.apricot.apricotDescription.slice(0, 25) + '<a target=\'_blank\' href=\'https://dovgaldima.pp.ua\'>...</a>'}</span></div><span>${data.author}</span></div>`;
     html += `<div class='card'><img class='img' src=${data.lemon.imgLemon} alt=${data.lemon.lemonTitle}><div><strong>${data.lemon.lemonTitle}</strong><br><span>${data.lemon.lemonDescription.slice(0, 25) + '<a target=\'_blank\' href=\'https://dovgaldima.pp.ua\'>...</a>'}</span></div><span>${data.author}</span></div>`;
-    html += `</main>`
+    html += `</main>`;
 //Footer
     html += `<footer><span>${fullYear + ' ' + data.author}</span></footer>`;
 
 root.innerHTML = html;
-
-// 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
